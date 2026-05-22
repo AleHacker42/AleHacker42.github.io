@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alejandro Hacker — PhD Student in Astrophysics at ICAS/UNSAM/CONICET. Research on exoplanet characterization, the Neptunian Desert, and Bayesian statistics.">
+  <title>Alejandro Hacker | Astrophysicist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════ NAVIGATION ═══════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">AH</a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">
+        <span class="lang-en">About</span>
+        <span class="lang-es">Sobre mí</span>
+      </a></li>
+      <li><a href="#research">
+        <span class="lang-en">Research</span>
+        <span class="lang-es">Investigación</span>
+      </a></li>
+      <li><a href="#publications">
+        <span class="lang-en">Publications</span>
+        <span class="lang-es">Publicaciones</span>
+      </a></li>
+      <li><a href="#teaching">
+        <span class="lang-en">Teaching</span>
+        <span class="lang-es">Docencia</span>
+      </a></li>
+      <li><a href="#scicomm">
+        <span class="lang-en">Outreach</span>
+        <span class="lang-es">Divulgación</span>
+      </a></li>
+      <li><a href="#experience">
+        <span class="lang-en">Experience</span>
+        <span class="lang-es">Experiencia</span>
+      </a></li>
+      <li><a href="#education">
+        <span class="lang-en">Education</span>
+        <span class="lang-es">Formación</span>
+      </a></li>
+      <li><a href="#contact">
+        <span class="lang-en">Contact</span>
+        <span class="lang-es">Contacto</span>
+      </a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" id="btn-es" onclick="setLanguage('es')">ES</button>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ════════════════════════════════════ -->
+<section id="hero">
+  <canvas id="starfield"></canvas>
+  <div class="hero-inner">
+
+    <div class="hero-photo-wrap">
+      <img src="foto1_rec.jpeg" alt="Alejandro Hacker" class="hero-photo">
+      <div class="photo-ring"></div>
+    </div>
+
+    <div class="hero-text">
+      <span class="hero-eyebrow">
+        <span class="lang-en">Hello, I'm</span>
+        <span class="lang-es">Hola, soy</span>
+      </span>
+      <h1 class="hero-name">Alejandro Hacker</h1>
+      <p class="hero-title">
+        <span class="lang-en">PhD Student in Astrophysics</span>
+        <span class="lang-es">Doctorando en Astrofísica</span>
+      </p>
+      <p class="hero-inst">
+        Instituto de Ciencias Físicas (ICIFI) &middot; UNSAM &middot; CONICET
+      </p>
+      <p class="hero-tagline">
+        <span class="lang-en">Exoplanet characterization &middot; Neptunian Desert &middot; Bayesian statistics</span>
+        <span class="lang-es">Caracterización de exoplanetas &middot; Desierto de Neptunos &middot; Estadística bayesiana</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#research" class="btn btn-primary">
+          <span class="lang-en">My Research</span>
+          <span class="lang-es">Mi Investigación</span>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span class="lang-en">Get in Touch</span>
+          <span class="lang-es">Contacto</span>
+        </a>
+      </div>
+      <div class="hero-social">
+        <a href="https://orcid.org/0009-0009-9452-0181" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg class="icon-orcid" viewBox="0 0 24 24" width="17" height="17">
+            <path fill="#A6CE39" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947-.947-.431-.947-.947.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/>
+          </svg>
+          ORCID
+        </a>
+        <a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Hacker,+A" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+          </svg>
+          arXiv
+        </a>
+        <a href="mailto:ahacker@unsam.edu.ar" class="social-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/>
+          </svg>
+          ahacker@unsam.edu.ar
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="hero-scroll" aria-label="Scroll down">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M7 10l5 5 5-5"/>
+    </svg>
+  </a>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="lang-en">About Me</span>
+      <span class="lang-es">Sobre Mí</span>
+    </h2>
+
+    <div class="about-grid">
+      <div class="about-bio animate-in">
+        <p class="lang-en">
+          I am a PhD student at the <strong>Instituto de Ciencias Físicas (ICIFI)</strong>
+          at Universidad Nacional de San Martín (UNSAM), in the International Center for
+          Advanced Studies (ICAS), working under the supervision of Dr. Rodrigo F. Díaz and
+          funded by a CONICET doctoral fellowship. My research focuses on the detection and
+          physical characterization of <strong>exoplanets</strong> — planets orbiting stars beyond
+          our Solar System. I combine space-based transit photometry
+          with high-precision ground-based radial velocity spectroscopy  to measure
+          planetary masses, radii, and bulk densities, constraining their internal compositions and
+          evolutionary histories. Throughout my work I rely on a solid foundation of
+          <strong>Bayesian statistics</strong> to model signals, compare competing models, and
+          infer physical parameters from complex spectroscopic datasets.
+        </p>
+        <p class="lang-es">
+          Soy estudiante de doctorado en el <strong>Instituto de Ciencias Físicas (ICIFI)</strong>
+          de la Universidad Nacional de San Martín (UNSAM), en el International Center for
+          Advanced Studies (ICAS), bajo la supervisión del Dr. Rodrigo F. Díaz, con financiamiento
+          de una beca doctoral CONICET. Mi investigación se enfoca en la detección y caracterización
+          física de <strong>exoplanetas</strong> — planetas orbitando estrellas fuera de nuestro
+          Sistema Solar. Combino fotometría de tránsito  con espectroscopía
+          de velocidad radial de alta precisión  para medir masas, radios y
+          densidades planetarias, lo que permite inferir su composición interna e historia
+          evolutiva. A lo largo de mi trabajo me apoyo en una sólida base de
+          <strong>estadística bayesiana</strong> para modelar señales, comparar modelos y realizar
+          inferencia de parámetros a partir de datos espectroscópicos complejos.
+        </p>
+      </div>
+
+      <div class="about-aside animate-in">
+        <div class="skills-block">
+          <h3>
+            <span class="lang-en">Tools &amp; Languages</span>
+            <span class="lang-es">Herramientas e Idiomas</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PyMC</span>
+            <span class="skill-tag">emcee</span>
+            <span class="skill-tag">NumPy / SciPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">LaTeX</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">BigQuery</span>
+            <span class="skill-tag">Dataform</span>
+          </div>
+        </div>
+
+        <div class="langs-block">
+          <div class="lang-row">
+            <span class="lang-en">Spanish &mdash; Native</span>
+            <span class="lang-es">Español &mdash; Nativo</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-en">English &mdash; Fluent</span>
+            <span class="lang-es">Inglés &mdash; Avanzado</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-en">Hebrew &mdash; Conversational</span>
+            <span class="lang-es">Hebreo &mdash; Intermedio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ RESEARCH ════════════════════════════════ -->
+<section id="research" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="lang-en">Research</span>
+      <span class="lang-es">Investigación</span>
+    </h2>
+    <p class="section-subtitle lang-en">
+      My work sits at the intersection of observational astronomy and statistical data analysis.
+    </p>
+    <p class="section-subtitle lang-es">
+      Mi trabajo se sitúa en la intersección de la astronomía observacional y el análisis estadístico de datos.
+    </p>
+
+    <div class="research-cards">
+
+      <!-- Card 1: Precision Radial Velocities -->
+      <div class="research-card animate-in">
+        <div class="card-icon">
+          <svg viewBox="0 0 64 64" width="52" height="52" fill="none">
+            <path d="M8 32 Q16 20 24 32 Q32 44 40 32 Q48 20 56 32" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+            <line x1="8" y1="48" x2="56" y2="48" stroke="#38bdf8" stroke-width="0.8" opacity="0.3"/>
+            <line x1="22" y1="44" x2="22" y2="52" stroke="#a78bfa" stroke-width="1.5"/>
+            <line x1="36" y1="44" x2="36" y2="52" stroke="#a78bfa" stroke-width="2"/>
+            <line x1="46" y1="44" x2="46" y2="52" stroke="#38bdf8" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <h3>
+          <span class="lang-en">Precise Radial Velocities</span>
+          <span class="lang-es">Velocidades Radiales Precisas</span>
+        </h3>
+        <p class="lang-en">
+          I analyze radial velocities — derived from Doppler shifts of stellar spectra recorded by
+          high-resolution spectrographs — to measure precise exoplanet masses. Combined with
+          photometric light curve observations, which yield planetary radii, these constrain bulk
+          densities and internal compositions. My analyses have involved spectra from
+          <strong>HARPS</strong> (ESO/La Silla), <strong>ESPRESSO</strong> (VLT/Paranal), and
+          <strong>PFS</strong> (Magellan/Las Campanas).
+        </p>
+        <p class="lang-es">
+          Analizo velocidades radiales — derivadas de corrimientos Doppler de espectros estelares
+          registrados por espectrógrafos de alta resolución — para medir masas precisas de
+          exoplanetas. Combinadas con observaciones fotométricas de curvas de luz, que proporcionan
+          los radios planetarios, estas restringen las densidades y las composiciones
+          internas. Mis análisis han involucrado espectros de <strong>HARPS</strong> (ESO/La
+          Silla), <strong>ESPRESSO</strong> (VLT/Paranal) y <strong>PFS</strong>
+          (Magellan/Las Campanas).
+        </p>
+        <div class="card-tags">
+          <span>HARPS</span><span>ESPRESSO</span><span>PFS</span>
+        </div>
+      </div>
+
+      <!-- Card 2: The Neptunian Desert -->
+      <div class="research-card animate-in">
+        <div class="card-icon">
+          <svg viewBox="0 0 64 64" width="52" height="52" fill="none">
+            <circle cx="32" cy="32" r="12" stroke="#38bdf8" stroke-width="1.5"/>
+            <ellipse cx="32" cy="32" rx="26" ry="8" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 2" opacity="0.6"/>
+            <circle cx="32" cy="32" r="2" fill="#38bdf8" opacity="0.5"/>
+            <circle cx="14" cy="32" r="1" fill="#38bdf8" opacity="0.3"/>
+            <circle cx="50" cy="32" r="1" fill="#38bdf8" opacity="0.3"/>
+          </svg>
+        </div>
+        <h3>
+          <span class="lang-en">The Neptunian Desert</span>
+          <span class="lang-es">El Desierto de Neptunos</span>
+        </h3>
+        <p class="lang-en">
+          A striking scarcity of Neptune-sized planets at short orbital periods. As part of the
+          NOMADS programme, I led the study with which we discovered and characterized two new
+          planets within this desert — <strong>TOI-2374 b</strong> and <strong>TOI-3071 b</strong>
+          — combining TESS and ground-based transit photometry with HARPS radial velocities to
+          measure their masses, radii, and bulk densities. I am currently participating in the
+          ATREIDES programme (VLT/ESPRESSO) to measure their spin-orbit angles through the
+          Rossiter-McLaughlin effect.
+        </p>
+        <p class="lang-es">
+          Una notable escasez de planetas de tamaño neptuniano en períodos orbitales cortos. En el
+          marco del programa NOMADS, lideré el estudio con el que descubrimos y caracterizamos dos
+          nuevos planetas dentro de este desierto — <strong>TOI-2374 b</strong> y
+          <strong>TOI-3071 b</strong> — combinando fotometría de tránsito de TESS y de telescopios
+          terrestres con velocidades radiales de HARPS para medir sus masas, radios y densidades. 
+          Actualmente participo en el programa ATREIDES (VLT/ESPRESSO) para medir sus
+          ángulos espín-órbita a través del efecto Rossiter-McLaughlin.
+        </p>
+        <div class="card-tags">
+          <span>TESS</span><span>HARPS</span><span>ESPRESSO</span><span>NOMADS</span><span>ATREIDES</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Bayesian Statistical Modeling -->
+      <div class="research-card animate-in">
+        <div class="card-icon">
+          <svg viewBox="0 0 64 64" width="52" height="52" fill="none">
+            <path d="M8 50 C12 50 16 50 20 38 C24 22 28 14 32 13 C36 12 40 20 44 36 C48 50 52 50 56 50"
+              stroke="#a78bfa" stroke-width="1.8" fill="none"/>
+            <path d="M8 50 C12 50 16 50 20 38 C24 22 28 14 32 13 C36 12 40 20 44 36 C48 50 52 50 56 50 L56 52 L8 52 Z"
+              fill="rgba(167,139,250,0.08)"/>
+            <line x1="32" y1="13" x2="32" y2="52" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+            <line x1="8" y1="52" x2="56" y2="52" stroke="#a78bfa" stroke-width="0.8" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3>
+          <span class="lang-en">Bayesian Statistical Modeling</span>
+          <span class="lang-es">Modelado Estadístico Bayesiano</span>
+        </h3>
+        <p class="lang-en">
+          I apply Bayesian inference to jointly model planetary signals and correlated stellar noise
+          — represented through <strong>Gaussian processes</strong> (GPs) or other noise
+          prescriptions depending on the dataset. This includes constructing competing RV models
+          that differ in noise structure and orbital characteristics, comparing them via marginal
+          likelihoods (Bayesian evidence), and sampling parameter posteriors with MCMC.
+        </p>
+        <p class="lang-es">
+          Aplico inferencia bayesiana para modelar conjuntamente señales planetarias y ruido estelar
+          correlacionado — representado mediante <strong>procesos gaussianos</strong> (GPs) u otras
+          prescripciones de ruido según el conjunto de datos. Esto incluye construir modelos de VR
+          competidores que difieren en su estructura de ruido y características orbitales,
+          compararlos mediante verosimilitudes marginales (evidencia bayesiana) y muestrear las
+          distribuciones posteriores de los parámetros con MCMC.
+        </p>
+        <div class="card-tags">
+          <span>MCMC</span><span>Gaussian Processes</span><span>Model Comparison</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PUBLICATIONS ════════════════════════════ -->
+<section id="publications" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="lang-en">Publications</span>
+      <span class="lang-es">Publicaciones</span>
+    </h2>
+    <p class="section-links">
+      <a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Hacker,+A"
+         target="_blank" rel="noopener noreferrer" class="text-link">
+        <span class="lang-en">arXiv author page ↗</span>
+        <span class="lang-es">Página de autor en arXiv ↗</span>
+      </a>
+      &nbsp;&ensp;
+      <a href="https://orcid.org/0009-0009-9452-0181"
+         target="_blank" rel="noopener noreferrer" class="text-link">
+        ORCID ↗
+      </a>
+    </p>
+
+    <!-- First Author -->
+    <div class="pub-group animate-in">
+      <h3 class="pub-group-title">
+        <span class="lang-en">First Author</span>
+        <span class="lang-es">Primer Autor</span>
+      </h3>
+
+      <article class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h4 class="pub-title">
+            TOI-2374 b and TOI-3071 b: two metal-rich sub-Saturns well within the Neptunian desert
+          </h4>
+          <p class="pub-authors">
+            <strong>Hacker, A.</strong>, Díaz, R.F., Armstrong, D.J., Fernández Fernández, J., et al.
+          </p>
+          <p class="pub-journal">
+            <em>Monthly Notices of the Royal Astronomical Society</em>, 532(2), 1612–1634
+          </p>
+          <div class="pub-actions">
+            <a href="https://arxiv.org/abs/2406.12996" target="_blank" rel="noopener noreferrer"
+               class="pub-link-btn">arXiv:2406.12996</a>
+            <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.532.1612H/abstract"
+               target="_blank" rel="noopener noreferrer" class="pub-link-btn">ADS ↗</a>
+            <span class="pub-badge badge-published">
+              <span class="lang-en">Published</span>
+              <span class="lang-es">Publicado</span>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-item">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h4 class="pub-title">
+            <span class="lang-en">Weighing the mass of LHS 3844 b</span>
+            <span class="lang-es">Weighing the mass of LHS 3844 b</span>
+          </h4>
+          <p class="pub-authors">
+            <strong>Hacker, A.</strong>, Astudillo-Defru, N., Díaz, R.F., Dorn, C., Bonfils, X., et al.
+          </p>
+          <p class="pub-journal">
+            <em>Astronomy &amp; Astrophysics</em>
+          </p>
+          <div class="pub-actions">
+            <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260328237H/abstract"
+               target="_blank" rel="noopener noreferrer" class="pub-link-btn">ADS ↗</a>
+            <span class="pub-badge badge-accepted">
+              <span class="lang-en">Accepted · A&amp;A</span>
+              <span class="lang-es">Aceptado · A&amp;A</span>
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Contributing Author -->
+    <div class="pub-group animate-in">
+      <h3 class="pub-group-title">
+        <span class="lang-en">Contributing Author</span>
+        <span class="lang-es">Coautor</span>
+      </h3>
+
+      <article class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <h4 class="pub-title">
+            Exploring the Neptunian desert: insights from a homogeneous planetary sample
+          </h4>
+          <p class="pub-authors">
+            Doyle, L., ..., <strong>Hacker, A.</strong>, et al.
+          </p>
+          <p class="pub-journal">
+            <em>Monthly Notices of the Royal Astronomical Society</em>, 539(4), 3138–3156
+          </p>
+          <div class="pub-actions">
+            <a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.539.3138D/abstract"
+               target="_blank" rel="noopener noreferrer" class="pub-link-btn">ADS ↗</a>
+            <span class="pub-badge badge-published">
+              <span class="lang-en">Published</span>
+              <span class="lang-es">Publicado</span>
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Thesis -->
+    <div class="pub-group animate-in">
+      <h3 class="pub-group-title">
+        <span class="lang-en">Thesis</span>
+        <span class="lang-es">Tesis</span>
+      </h3>
+
+      <article class="pub-item">
+        <div class="pub-year">2022</div>
+        <div class="pub-body">
+          <h4 class="pub-title">
+            Modelos de velocidad radial para la detección de planetas extrasolares de baja masa
+          </h4>
+          <p class="pub-authors"><strong>Hacker, A.</strong> · Director: Díaz, R.F.</p>
+          <p class="pub-journal">
+            <em>Tesis de Licenciatura en Ciencias Físicas</em>,
+            Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires (UBA), Agosto 2022
+          </p>
+          <div class="pub-actions">
+            <a href="https://bibliotecadigital.exactas.uba.ar/collection/seminario/document/seminario_nFIS000142_Hacker"
+               target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+              <span class="lang-en">Repository ↗</span>
+              <span class="lang-es">Repositorio ↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TEACHING & OUTREACH ════════════════════ -->
+<section id="teaching" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="lang-en">Teaching &amp; Public Engagement</span>
+      <span class="lang-es">Docencia y Actividades de Divulgación</span>
+    </h2>
+
+    <div class="teaching-grid">
+
+      <!-- Teaching -->
+      <div class="animate-in">
+        <h3 class="block-title">
+          <span class="lang-en">Teaching</span>
+          <span class="lang-es">Docencia</span>
+        </h3>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Professor</span>
+            <span class="lang-es">Profesor</span>
+          </div>
+          <div class="role-where">Instituto Tecnológico de Buenos Aires (ITBA)</div>
+          <div class="role-course">
+            <span class="lang-en">Artificial Intelligence Systems</span>
+            <span class="lang-es">Sistemas de Inteligencia Artificial</span>
+          </div>
+          <div class="role-dates">Jul – Dec 2025</div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Senior Teaching Assistant</span>
+            <span class="lang-es">Jefe de Trabajos Prácticos</span>
+          </div>
+          <div class="role-where">ECyT – UNSAM</div>
+          <div class="role-course">
+            <span class="lang-en">Statistical Inference I</span>
+            <span class="lang-es">Estadística e Inferencia I</span>
+          </div>
+          <div class="role-dates">Jul 2024 – Dec 2025</div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Teaching Assistant</span>
+            <span class="lang-es">Ayudante de Cátedra</span>
+          </div>
+          <div class="role-where">UBA / UNSAM</div>
+          <div class="role-course">
+            <span class="lang-en">Quantum Mechanics &middot; Mechanics Lab &middot; Electromagnetism &amp; Optics &middot; Statistical Inference I</span>
+            <span class="lang-es">Física Teórica 2 (Mecánica Cuántica) &middot; Laboratorio 1 &middot; Electromagnetismo y Óptica &middot; Estadística e Inferencia I</span>
+          </div>
+          <div class="role-dates">2022 – 2024</div>
+        </div>
+      </div>
+
+      <!-- Outreach -->
+      <div class="animate-in">
+        <h3 class="block-title">
+          <span class="lang-en">Public Engagement</span>
+          <span class="lang-es">Actividades de Divulgación</span>
+        </h3>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Science Writer &amp; Editor</span>
+            <span class="lang-es">Redactor y Editor Científico</span>
+          </div>
+          <div class="role-where">El Gato y La Caja</div>
+          <div class="role-course">
+            <span class="lang-en">Scientific review and popular science content for social media</span>
+            <span class="lang-es">Revisión científica y contenido de divulgación para redes sociales</span>
+          </div>
+          <div class="role-dates">Jan 2020 – Jul 2025</div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Educational Guide &amp; Team Coordinator</span>
+            <span class="lang-es">Guía Educativo y Coordinador de Equipo</span>
+          </div>
+          <div class="role-where">Centro Cultural de la Ciencia (C3)</div>
+          <div class="role-course">
+            <span class="lang-en">Led participatory science activities for school and general public visitors; designed workshop content and coordinated the education team.</span>
+            <span class="lang-es">Lideré actividades científicas participativas para público escolar y general; diseñé contenido para talleres y coordiné el equipo de educadores.</span>
+          </div>
+          <div class="role-dates">Apr 2019 – Mar 2023</div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Science Exhibitor — Math &amp; Physics</span>
+            <span class="lang-es">Expositor de Matemática y Física</span>
+          </div>
+          <div class="role-where">Tecnópolis</div>
+          <div class="role-course">
+            <span class="lang-en">Guided school groups and general public through interactive mathematics and physics exhibitions, facilitating hands-on science experiences.</span>
+            <span class="lang-es">Guiaba grupos escolares y al público general en exposiciones interactivas de matemática y física, facilitando experiencias de ciencia participativa.</span>
+          </div>
+          <div class="role-dates">Sep 2017 – Nov 2018</div>
+        </div>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Content Creator &amp; Expert Consultant</span>
+            <span class="lang-es">Creador de Contenido y Asesor Científico</span>
+          </div>
+          <div class="role-where">UNSAM / Caja Andina de Fomentos</div>
+          <div class="role-course">
+            <span class="lang-en">VR physics lesson for secondary schools</span>
+            <span class="lang-es">Clase de física en realidad virtual para escuelas secundarias</span>
+          </div>
+          <div class="role-dates">Jul – Dec 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Talks & Conferences -->
+    <div class="talks-block animate-in">
+      <h3 class="block-title">
+        <span class="lang-en">Talks &amp; Conferences</span>
+        <span class="lang-es">Charlas y Conferencias</span>
+      </h3>
+
+      <div class="talk-item">
+        <div class="talk-meta">
+          <span class="talk-badge">
+            <span class="lang-en">Contributed Talk</span>
+            <span class="lang-es">Contribución Oral</span>
+          </span>
+          <span class="talk-year">Sep 2024</span>
+        </div>
+        <p class="talk-title">
+          "TOI-2374 b and TOI-3071 b: two metal-rich sub-Saturns well within the Neptunian desert"
+        </p>
+        <p class="talk-event">
+          <span class="lang-en">66th Annual Meeting of the Asociación Argentina de Astronomía · La Plata, Argentina</span>
+          <span class="lang-es">66ª Reunión Anual de la Asociación Argentina de Astronomía · La Plata, Argentina</span>
+        </p>
+      </div>
+
+      <div class="talk-item">
+        <div class="talk-meta">
+          <span class="talk-badge">
+            <span class="lang-en">Contributed Talk</span>
+            <span class="lang-es">Contribución Oral</span>
+          </span>
+          <span class="talk-year">Sep 2025</span>
+        </div>
+        <p class="talk-title">
+          "TOI-2374 b and TOI-3071 b: two metal-rich sub-Saturns well within the Neptunian desert"
+        </p>
+        <p class="talk-event">
+          <span class="lang-en">The Fate of Neptunian Worlds: exploring demographics, atmospheres and evolution · University of Warwick, Coventry, UK</span>
+          <span class="lang-es">The Fate of Neptunian Worlds: exploring demographics, atmospheres and evolution · Universidad de Warwick, Coventry, UK</span>
+        </p>
+      </div>
+
+      <div class="talk-item">
+        <div class="talk-meta">
+          <span class="talk-badge talk-badge-seminar">
+            <span class="lang-en">Invited Seminar</span>
+            <span class="lang-es">Seminario Invitado</span>
+          </span>
+          <span class="talk-year">Sep 2025</span>
+        </div>
+        <p class="talk-title">
+          "Weighing the mass of LHS 3844 b"
+        </p>
+        <p class="talk-event">
+          <span class="lang-en">Astronomy Group Seminar · University of Warwick, Coventry, UK</span>
+          <span class="lang-es">Seminario del Grupo de Astronomía · Universidad de Warwick, Coventry, UK</span>
+        </p>
+      </div>
+
+      <!-- ── ADD FUTURE TALKS HERE ───────────────────────────────────────────
+           Duplicate the .talk-item block above to add more talks/outreach links.
+           ─────────────────────────────────────────────────────────────────── -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SCIENCE COMMUNICATION ══════════════════ -->
+<section id="scicomm" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="lang-en">Science Communication</span>
+      <span class="lang-es">Comunicación pública de la ciencia</span>
+    </h2>
+    <div class="scicomm-grid">
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/icPsTUYE8I4/mqdefault.jpg" alt="Einstein y la física cuántica: ¿Dios juega a los dados?" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-charla-div">Charla de divulgación</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Einstein y la física cuántica: ¿Dios juega a los dados?</h4>
+          <div class="scicomm-outlet">Planetario Universidad Nacional de La Plata</div>
+          <p class="scicomm-desc">Cómo la física cuántica desafió el sentido común, desde sus orígenes históricos hasta los debates que transformaron nuestra comprensión del universo.</p>
+          <a href="https://www.youtube.com/watch?v=icPsTUYE8I4" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="un_ataque_al_azar.png" alt="Un ataque al azar" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2019</span>
+          </div>
+          <h4 class="scicomm-title">Un ataque al azar</h4>
+          <div class="scicomm-outlet">El gato y la caja</div>
+          <p class="scicomm-desc">¿La física cuántica es una teoría completa? ¿Existe una realidad objetiva independiente del observador?</p>
+          <a href="https://elgatoylacaja.com/notas/un-ataque-al-azar" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="disparar_la_luz.jpg" alt="Disparar la luz fantástica" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2020</span>
+          </div>
+          <h4 class="scicomm-title">Disparar la luz fantástica</h4>
+          <div class="scicomm-outlet">El gato y la caja</div>
+          <p class="scicomm-desc">¿Cómo se hace un láser y para qué sirve? ¿Son posibles los sables láser de Star Wars?</p>
+          <a href="https://elgatoylacaja.com/notas/disparar-la-luz-fantastica" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Mundos fuera del sistema.png" alt="Mundos fuera del Sistema Solar" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Mundos fuera del Sistema Solar</h4>
+          <div class="scicomm-outlet">Revista Si Muove · Planetario Galileo Galilei</div>
+          <p class="scicomm-desc">¿Cómo se ve a gran escala la gran familia de planetas de nuestra galaxia? (p. 35)</p>
+          <a href="https://planetario.buenosaires.gob.ar/sites/default/files/2023-12/SI%20MUOVE%20ONLINE.pdf" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Desierto_neptunos.jpg" alt="El desierto de los neptunos calientes" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2025</span>
+          </div>
+          <h4 class="scicomm-title">El desierto de los neptunos calientes</h4>
+          <div class="scicomm-outlet">Revista Si Muove · Planetario Galileo Galilei</div>
+          <p class="scicomm-desc">¿Cómo se ve a gran escala la gran familia de planetas de nuestra galaxia? (p. 6)</p>
+          <a href="https://planetario.buenosaires.gob.ar/sites/default/files/2025-07/revista%2029%20final%20BAJA.pdf#page=6" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Qué_es_la_fisica_cuantica.png" alt="¿Qué es la física cuántica?" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2020</span>
+          </div>
+          <h4 class="scicomm-title">¿Qué es la física cuántica?</h4>
+          <div class="scicomm-outlet">Centro Cultural de la Ciencia (C3)</div>
+          <p class="scicomm-desc">¿Por qué la hacía enojar tanto a Einstein?</p>
+          <a href="https://www.instagram.com/p/CCCX_PVj7Rt/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Entrevista_Einstein.jpeg" alt="Entrevista con Albert Einstein" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2022</span>
+          </div>
+          <h4 class="scicomm-title">Entrevista con Albert Einstein</h4>
+          <div class="scicomm-outlet">Centro Cultural de la Ciencia (C3)</div>
+          <p class="scicomm-desc">Entrevista con Albert Einstein en su cumpleaños</p>
+          <a href="https://www.instagram.com/p/CbDr4nVDIfD/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/AdN94WjmY1I/mqdefault.jpg" alt="Defensa de Tesis de Licenciatura" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-charla-acad">Charla académica</span>
+            <span class="scicomm-year">2022</span>
+          </div>
+          <h4 class="scicomm-title">Defensa de Tesis de Licenciatura</h4>
+          <div class="scicomm-outlet">Física Exactas UBA</div>
+          <p class="scicomm-desc">Modelos de velocidad radial para la detección de planetas extrasolares de baja masa</p>
+          <a href="https://www.youtube.com/watch?v=AdN94WjmY1I" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/Rso5BN0x_r0/mqdefault.jpg" alt="La anteúltima pregunta: Exoplanetas" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-documental">Documental</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">La anteúltima pregunta: Exoplanetas</h4>
+          <div class="scicomm-outlet">Canal Encuentro</div>
+          <p class="scicomm-desc">Capítulo de la serie documental sobre exoplanetas (redacté el contenido para el guión)</p>
+          <a href="https://www.youtube.com/watch?v=Rso5BN0x_r0" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/CIrZZ8xfZMo/mqdefault.jpg" alt="EL GIOW | EL UNIVERSO ft. ALE HACKER" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">EL GIOW | EL UNIVERSO ft. ALE HACKER</h4>
+          <div class="scicomm-outlet">Gelatina</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas y física cuántica en el programa El Giow en el canal de streaming Gelatina</p>
+          <a href="https://www.youtube.com/watch?v=CIrZZ8xfZMo" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/6H1QkuglNNI/mqdefault.jpg" alt="Obsesiones rotativas: Exoplanetas" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Obsesiones rotativas: Exoplanetas | #AyudameLoco</h4>
+          <div class="scicomm-outlet">Radio Nacional Rock FM 93.7</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas en el programa Ayudame Loco en la Radio Nacional Rock FM 93.7</p>
+          <a href="https://www.youtube.com/watch?v=6H1QkuglNNI" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/2PPhKQA7CpY/mqdefault.jpg" alt="Podría ser peor | Radio Con Vos" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2025</span>
+          </div>
+          <h4 class="scicomm-title">Podría ser peor | Radio Con Vos</h4>
+          <div class="scicomm-outlet">Radio Con Vos 89.9</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas en el programa Podría ser peor en Radio Con Vos 89.9</p>
+          <a href="https://www.youtube.com/watch?v=2PPhKQA7CpY" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="ecyt_unsam.png" alt="Nota ECyT UNSAM" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2024</span>
+          </div>
+          <h4 class="scicomm-title">Nota ECyT UNSAM</h4>
+          <div class="scicomm-outlet">ECyT – UNSAM</div>
+          <p class="scicomm-desc">Video de difusión contando a la comunidad sobre nuestro trabajo en el grupo de exoplanetas</p>
+          <a href="https://www.instagram.com/p/C9QJd3DRngz/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="ecyt_unsam.png" alt="Nota ECyT UNSAM" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2024</span>
+          </div>
+          <h4 class="scicomm-title">Nota ECyT UNSAM</h4>
+          <div class="scicomm-outlet">ECyT – UNSAM</div>
+          <p class="scicomm-desc">Video divulgativo contando sobre mi último trabajo</p>
+          <a href="https://www.instagram.com/p/C_gD59VxTqf/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2025</span>
+          </div>
+          <h4 class="scicomm-title">Podría ser peor | Radio Con Vos</h4>
+          <div class="scicomm-outlet">Radio Con Vos 89.9</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas en el programa Podría ser peor en Radio Con Vos 89.9</p>
+          <a href="https://www.youtube.com/watch?v=2PPhKQA7CpY" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Desierto_neptunos.jpg" alt="El desierto de los neptunos calientes" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2025</span>
+          </div>
+          <h4 class="scicomm-title">El desierto de los neptunos calientes</h4>
+          <div class="scicomm-outlet">Revista Si Muove · Planetario Galileo Galilei</div>
+          <p class="scicomm-desc">¿Cómo se ve a gran escala la gran familia de planetas de nuestra galaxia? (p. 6)</p>
+          <a href="https://planetario.buenosaires.gob.ar/sites/default/files/2025-07/revista%2029%20final%20BAJA.pdf#page=6" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="ecyt_unsam.png" alt="Nota ECyT UNSAM" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2024</span>
+          </div>
+          <h4 class="scicomm-title">Nota ECyT UNSAM</h4>
+          <div class="scicomm-outlet">ECyT – UNSAM</div>
+          <p class="scicomm-desc">Video de difusión contando a la comunidad sobre nuestro trabajo en el grupo de exoplanetas</p>
+          <a href="https://www.instagram.com/p/C9QJd3DRngz/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="ecyt_unsam.png" alt="Nota ECyT UNSAM" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2024</span>
+          </div>
+          <h4 class="scicomm-title">Nota ECyT UNSAM</h4>
+          <div class="scicomm-outlet">ECyT – UNSAM</div>
+          <p class="scicomm-desc">Video divulgativo contando sobre mi último trabajo</p>
+          <a href="https://www.instagram.com/p/C_gD59VxTqf/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/Rso5BN0x_r0/mqdefault.jpg" alt="La anteúltima pregunta: Exoplanetas" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-documental">Documental</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">La anteúltima pregunta: Exoplanetas</h4>
+          <div class="scicomm-outlet">Canal Encuentro</div>
+          <p class="scicomm-desc">Capítulo de la serie documental sobre exoplanetas (redacté el contenido para el guión)</p>
+          <a href="https://www.youtube.com/watch?v=Rso5BN0x_r0" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/CIrZZ8xfZMo/mqdefault.jpg" alt="EL GIOW | EL UNIVERSO ft. ALE HACKER" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">EL GIOW | EL UNIVERSO ft. ALE HACKER</h4>
+          <div class="scicomm-outlet">Gelatina</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas y física cuántica en el programa El Giow en el canal de streaming Gelatina</p>
+          <a href="https://www.youtube.com/watch?v=CIrZZ8xfZMo" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/6H1QkuglNNI/mqdefault.jpg" alt="Obsesiones rotativas: Exoplanetas" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Obsesiones rotativas: Exoplanetas | #AyudameLoco</h4>
+          <div class="scicomm-outlet">Radio Nacional Rock FM 93.7</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas en el programa Ayudame Loco en la Radio Nacional Rock FM 93.7</p>
+          <a href="https://www.youtube.com/watch?v=6H1QkuglNNI" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/icPsTUYE8I4/mqdefault.jpg" alt="Einstein y la física cuántica: ¿Dios juega a los dados?" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-charla-div">Charla de divulgación</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Einstein y la física cuántica: ¿Dios juega a los dados?</h4>
+          <div class="scicomm-outlet">Planetario Universidad Nacional de La Plata</div>
+          <p class="scicomm-desc">Cómo la física cuántica desafió el sentido común, desde sus orígenes históricos hasta los debates que transformaron nuestra comprensión del universo.</p>
+          <a href="https://www.youtube.com/watch?v=icPsTUYE8I4" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Mundos fuera del sistema.png" alt="Mundos fuera del Sistema Solar" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Mundos fuera del Sistema Solar</h4>
+          <div class="scicomm-outlet">Revista Si Muove · Planetario Galileo Galilei</div>
+          <p class="scicomm-desc">¿Cómo se ve a gran escala la gran familia de planetas de nuestra galaxia? (p. 35)</p>
+          <a href="https://planetario.buenosaires.gob.ar/sites/default/files/2023-12/SI%20MUOVE%20ONLINE.pdf" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Entrevista_Einstein.jpeg" alt="Entrevista con Albert Einstein" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2022</span>
+          </div>
+          <h4 class="scicomm-title">Entrevista con Albert Einstein</h4>
+          <div class="scicomm-outlet">Centro Cultural de la Ciencia (C3)</div>
+          <p class="scicomm-desc">Entrevista con Albert Einstein en su cumpleaños</p>
+          <a href="https://www.instagram.com/p/CbDr4nVDIfD/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/AdN94WjmY1I/mqdefault.jpg" alt="Defensa de Tesis de Licenciatura" loading="lazy">
+          <div class="thumb-play"><svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg></div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-charla-acad">Charla académica</span>
+            <span class="scicomm-year">2022</span>
+          </div>
+          <h4 class="scicomm-title">Defensa de Tesis de Licenciatura</h4>
+          <div class="scicomm-outlet">Física Exactas UBA</div>
+          <p class="scicomm-desc">Modelos de velocidad radial para la detección de planetas extrasolares de baja masa</p>
+          <a href="https://www.youtube.com/watch?v=AdN94WjmY1I" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="disparar_la_luz.jpg" alt="Disparar la luz fantástica" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2020</span>
+          </div>
+          <h4 class="scicomm-title">Disparar la luz fantástica</h4>
+          <div class="scicomm-outlet">El gato y la caja</div>
+          <p class="scicomm-desc">¿Cómo se hace un láser y para qué sirve? ¿Son posibles los sables láser de Star Wars?</p>
+          <a href="https://elgatoylacaja.com/notas/disparar-la-luz-fantastica" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Qué_es_la_fisica_cuantica.png" alt="¿Qué es la física cuántica?" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2020</span>
+          </div>
+          <h4 class="scicomm-title">¿Qué es la física cuántica?</h4>
+          <div class="scicomm-outlet">Centro Cultural de la Ciencia (C3)</div>
+          <p class="scicomm-desc">¿Por qué la hacía enojar tanto a Einstein?</p>
+          <a href="https://www.instagram.com/p/CCCX_PVj7Rt/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="un_ataque_al_azar.png" alt="Un ataque al azar" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2019</span>
+          </div>
+          <h4 class="scicomm-title">Un ataque al azar</h4>
+          <div class="scicomm-outlet">El gato y la caja</div>
+          <p class="scicomm-desc">¿La física cuántica es una teoría completa? ¿Existe una realidad objetiva independiente del observador?</p>
+          <a href="https://elgatoylacaja.com/notas/un-ataque-al-azar" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2019</span>
+          </div>
+          <h4 class="scicomm-title">Un ataque al azar</h4>
+          <div class="scicomm-outlet">El gato y la caja</div>
+          <p class="scicomm-desc">¿La física cuántica es una teoría completa? ¿Existe una realidad objetiva independiente del observador?</p>
+          <a href="https://elgatoylacaja.com/notas/un-ataque-al-azar" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 2: Disparar la luz fantástica -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="disparar_la_luz.jpg" alt="Disparar la luz fantástica" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2020</span>
+          </div>
+          <h4 class="scicomm-title">Disparar la luz fantástica</h4>
+          <div class="scicomm-outlet">El gato y la caja</div>
+          <p class="scicomm-desc">¿Cómo se hace un láser y para qué sirve? ¿Son posibles los sables láser de Star Wars?</p>
+          <a href="https://elgatoylacaja.com/notas/disparar-la-luz-fantastica" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 3: ¿Qué es la física cuántica? (Instagram) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Qué_es_la_fisica_cuantica.png" alt="¿Qué es la física cuántica?" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2020</span>
+          </div>
+          <h4 class="scicomm-title">¿Qué es la física cuántica?</h4>
+          <div class="scicomm-outlet">Centro Cultural de la Ciencia (C3)</div>
+          <p class="scicomm-desc">¿Por qué la hacía enojar tanto a Einstein?</p>
+          <a href="https://www.instagram.com/p/CCCX_PVj7Rt/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 4: Entrevista con Albert Einstein (Instagram) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Entrevista_Einstein.jpeg" alt="Entrevista con Albert Einstein" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2022</span>
+          </div>
+          <h4 class="scicomm-title">Entrevista con Albert Einstein</h4>
+          <div class="scicomm-outlet">Centro Cultural de la Ciencia (C3)</div>
+          <p class="scicomm-desc">Entrevista con Albert Einstein en su cumpleaños</p>
+          <a href="https://www.instagram.com/p/CbDr4nVDIfD/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 5: Nota ECyT UNSAM (Instagram) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb thumb-instagram">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,0.85)" stroke="none"/>
+          </svg>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2024</span>
+          </div>
+          <h4 class="scicomm-title">Nota ECyT UNSAM</h4>
+          <div class="scicomm-outlet">ECyT – UNSAM</div>
+          <p class="scicomm-desc">Video de difusión contando a la comunidad sobre nuestro trabajo en el grupo de exoplanetas</p>
+          <a href="https://www.instagram.com/p/C9QJd3DRngz/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 6: Nota ECyT UNSAM 2 (Instagram) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb thumb-instagram">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,0.85)" stroke="none"/>
+          </svg>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-instagram">Instagram</span>
+            <span class="scicomm-year">2024</span>
+          </div>
+          <h4 class="scicomm-title">Nota ECyT UNSAM</h4>
+          <div class="scicomm-outlet">ECyT – UNSAM</div>
+          <p class="scicomm-desc">Video divulgativo contando sobre mi último trabajo</p>
+          <a href="https://www.instagram.com/p/C_gD59VxTqf/" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 7: Defensa de Tesis (YouTube - Charla académica) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/AdN94WjmY1I/mqdefault.jpg" alt="Defensa de Tesis de Licenciatura" loading="lazy">
+          <div class="thumb-play">
+            <svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg>
+          </div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-charla-acad">Charla académica</span>
+            <span class="scicomm-year">2022</span>
+          </div>
+          <h4 class="scicomm-title">Defensa de Tesis de Licenciatura</h4>
+          <div class="scicomm-outlet">Física Exactas UBA</div>
+          <p class="scicomm-desc">Modelos de velocidad radial para la detección de planetas extrasolares de baja masa</p>
+          <a href="https://www.youtube.com/watch?v=AdN94WjmY1I" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 8: La anteúltima pregunta (YouTube - Documental) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/Rso5BN0x_r0/mqdefault.jpg" alt="La anteúltima pregunta: Exoplanetas" loading="lazy">
+          <div class="thumb-play">
+            <svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg>
+          </div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-documental">Documental</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">La anteúltima pregunta: Exoplanetas</h4>
+          <div class="scicomm-outlet">Canal Encuentro</div>
+          <p class="scicomm-desc">Capítulo de la serie documental sobre exoplanetas (redacté el contenido para el guión)</p>
+          <a href="https://www.youtube.com/watch?v=Rso5BN0x_r0" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 9: EL GIOW (YouTube - Entrevista) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/CIrZZ8xfZMo/mqdefault.jpg" alt="EL GIOW | EL UNIVERSO ft. ALE HACKER" loading="lazy">
+          <div class="thumb-play">
+            <svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg>
+          </div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">EL GIOW | EL UNIVERSO ft. ALE HACKER</h4>
+          <div class="scicomm-outlet">Gelatina</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas y física cuántica en el programa El Giow en el canal de streaming Gelatina</p>
+          <a href="https://www.youtube.com/watch?v=CIrZZ8xfZMo" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 10: Obsesiones rotativas (YouTube - Entrevista) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/6H1QkuglNNI/mqdefault.jpg" alt="Obsesiones rotativas: Exoplanetas" loading="lazy">
+          <div class="thumb-play">
+            <svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg>
+          </div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Obsesiones rotativas: Exoplanetas | #AyudameLoco</h4>
+          <div class="scicomm-outlet">Radio Nacional Rock FM 93.7</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas en el programa Ayudame Loco en la Radio Nacional Rock FM 93.7</p>
+          <a href="https://www.youtube.com/watch?v=6H1QkuglNNI" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 11: Podría ser peor (YouTube - Entrevista) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/2PPhKQA7CpY/mqdefault.jpg" alt="Podría ser peor | Radio Con Vos" loading="lazy">
+          <div class="thumb-play">
+            <svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg>
+          </div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-entrevista">Entrevista</span>
+            <span class="scicomm-year">2025</span>
+          </div>
+          <h4 class="scicomm-title">Podría ser peor | Radio Con Vos</h4>
+          <div class="scicomm-outlet">Radio Con Vos 89.9</div>
+          <p class="scicomm-desc">Entrevista sobre exoplanetas en el programa Podría ser peor en Radio Con Vos 89.9</p>
+          <a href="https://www.youtube.com/watch?v=2PPhKQA7CpY" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 12: Einstein y la física cuántica (YouTube - Charla divulgación) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="https://img.youtube.com/vi/icPsTUYE8I4/mqdefault.jpg" alt="Einstein y la física cuántica: ¿Dios juega a los dados?" loading="lazy">
+          <div class="thumb-play">
+            <svg viewBox="0 0 56 56" width="52" height="52"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.65)"/><polygon points="22,18 40,28 22,38" fill="white"/></svg>
+          </div>
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-charla-div">Charla de divulgación</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Einstein y la física cuántica: ¿Dios juega a los dados?</h4>
+          <div class="scicomm-outlet">Planetario Universidad Nacional de La Plata</div>
+          <p class="scicomm-desc">Cómo la física cuántica desafió el sentido común, desde sus orígenes históricos hasta los debates que transformaron nuestra comprensión del universo.</p>
+          <a href="https://www.youtube.com/watch?v=icPsTUYE8I4" target="_blank" rel="noopener noreferrer" class="scicomm-link">Ver <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 13: El desierto de los neptunos calientes (Artículo, Si Muove) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Desierto_neptunos.jpg" alt="El desierto de los neptunos calientes" loading="lazy" class="thumb-portrait">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2025</span>
+          </div>
+          <h4 class="scicomm-title">El desierto de los neptunos calientes</h4>
+          <div class="scicomm-outlet">Revista Si Muove · Planetario Galileo Galilei</div>
+          <p class="scicomm-desc">¿Cómo se ve a gran escala la gran familia de planetas de nuestra galaxia? (p. 6)</p>
+          <a href="https://planetario.buenosaires.gob.ar/sites/default/files/2025-07/revista%2029%20final%20BAJA.pdf#page=6" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+      <!-- 14: Mundos fuera del Sistema Solar (Artículo, Si Muove) -->
+      <div class="scicomm-card animate-in">
+        <div class="scicomm-thumb">
+          <img src="Mundos fuera del sistema.png" alt="Mundos fuera del Sistema Solar" loading="lazy">
+        </div>
+        <div class="scicomm-body">
+          <div class="scicomm-header">
+            <span class="scicomm-badge badge-article">Artículo</span>
+            <span class="scicomm-year">2023</span>
+          </div>
+          <h4 class="scicomm-title">Mundos fuera del Sistema Solar</h4>
+          <div class="scicomm-outlet">Revista Si Muove · Planetario Galileo Galilei</div>
+          <p class="scicomm-desc">¿Cómo se ve a gran escala la gran familia de planetas de nuestra galaxia? (p. 35)</p>
+          <a href="https://planetario.buenosaires.gob.ar/sites/default/files/2023-12/SI%20MUOVE%20ONLINE.pdf" target="_blank" rel="noopener noreferrer" class="scicomm-link">Leer <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ OTHER EXPERIENCE ════════════════════════ -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="lang-en">Other Experience</span>
+      <span class="lang-es">Otra Experiencia Laboral</span>
+    </h2>
+
+    <div class="teaching-grid">
+
+      <!-- Industry -->
+      <div class="animate-in">
+        <h3 class="block-title">
+          <span class="lang-en">Industry</span>
+          <span class="lang-es">Industria</span>
+        </h3>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Data Scientist — ML &amp; GCP</span>
+            <span class="lang-es">Científico de Datos — ML y GCP</span>
+          </div>
+          <div class="role-where">Andata</div>
+          <div class="role-course">
+            <span class="lang-en">End-to-end ML model development for forecasting, recommendation, and commercial optimization. Full model lifecycle: EDA, design, validation, production deployment, and monitoring on Google Cloud Platform (BigQuery, Dataform, Cloud Functions).</span>
+            <span class="lang-es">Desarrollo de modelos de ML de punta a punta para forecasting, recomendación y optimización comercial. Ciclo completo: EDA, diseño, validación, puesta en producción y monitoreo en Google Cloud Platform (BigQuery, Dataform, Cloud Functions).</span>
+          </div>
+          <div class="role-dates">Jan 2026 – present</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <div class="animate-in">
+        <h3 class="block-title">
+          <span class="lang-en">Community Work</span>
+          <span class="lang-es">Trabajo Comunitario</span>
+        </h3>
+
+        <div class="role-item">
+          <div class="role-title">
+            <span class="lang-en">Group Coordinator</span>
+            <span class="lang-es">Coordinador de Grupo</span>
+          </div>
+          <div class="role-where">
+            <span class="lang-en">Asociación Civil Amigos de AKIM (social, educational and recreational center for adults with mental and intellectual disabilities)</span>
+            <span class="lang-es">Asociación Civil Amigos de AKIM (centro social, educativo y recreativo para personas con discapacidad mental e intelectual)</span>
+          </div>
+          <div class="role-course">
+            <span class="lang-en">Planned and implemented recreational and educational programs, including camp coordination.</span>
+            <span class="lang-es">Manejo de grupo, planificación de actividades, implementación de programa recreativo y educativo, planificación de campamentos</span>
+          </div>
+          <div class="role-dates">Jan 2016 – Dec 2018</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ EDUCATION ═══════════════════════════════ -->
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="lang-en">Education &amp; Awards</span>
+      <span class="lang-es">Formación y Reconocimientos</span>
+    </h2>
+
+    <div class="edu-grid">
+
+      <!-- Degrees -->
+      <div class="animate-in">
+        <h3 class="block-title">
+          <span class="lang-en">Degrees</span>
+          <span class="lang-es">Títulos</span>
+        </h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-dates">2023 – present</div>
+              <div class="tl-degree">
+                <span class="lang-en">PhD in Science and Technology (Physics)</span>
+                <span class="lang-es">Doctorado en Ciencia y Tecnología, Mención Física</span>
+              </div>
+              <div class="tl-inst">Instituto de Tecnología Sábato, UNSAM</div>
+              <div class="tl-detail">
+                <span class="lang-en">Supervisor: Dr. Rodrigo F. Díaz · ICAS/CONICET</span>
+                <span class="lang-es">Director: Dr. Rodrigo F. Díaz · ICAS/CONICET</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-dates">2015 – 2022</div>
+              <div class="tl-degree">
+                <span class="lang-en">BSc/MSc in Physics <em>(Licenciatura en Ciencias Físicas)</em></span>
+                <span class="lang-es">Licenciatura en Ciencias Físicas</span>
+              </div>
+              <div class="tl-inst">Universidad de Buenos Aires (UBA)</div>
+              <div class="tl-detail">GPA: 9.50 / 10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards & Schools -->
+      <div class="animate-in">
+        <h3 class="block-title">
+          <span class="lang-en">Fellowships &amp; Awards</span>
+          <span class="lang-es">Becas y Reconocimientos</span>
+        </h3>
+
+        <div class="award-item">
+          <div class="award-name">
+            <span class="lang-en">CONICET Doctoral Fellowship</span>
+            <span class="lang-es">Beca Doctoral CONICET</span>
+          </div>
+          <div class="award-where">International Center for Advanced Studies (ICAS)</div>
+          <div class="award-dates">2023 – present</div>
+        </div>
+
+        <h3 class="block-title" style="margin-top: 2rem;">
+          <span class="lang-en">Schools &amp; Workshops</span>
+          <span class="lang-es">Escuelas y Workshops</span>
+        </h3>
+
+        <div class="school-item">
+          <span class="school-year">2025</span>
+          <div>
+            <div class="school-name">The Fate of Neptunian Worlds</div>
+            <div class="school-where">University of Warwick · Coventry, UK</div>
+          </div>
+        </div>
+        <div class="school-item">
+          <span class="school-year">2025</span>
+          <div>
+            <div class="school-name">
+              <span class="lang-en">Sagan Summer Workshop: Exoplanet Demographics (remote)</span>
+              <span class="lang-es">Sagan Summer Workshop: Exoplanet Demographics (remoto)</span>
+            </div>
+            <div class="school-where">NExSc, Caltech · Pasadena, CA</div>
+          </div>
+        </div>
+        <div class="school-item">
+          <span class="school-year">2025</span>
+          <div>
+            <div class="school-name">La Silla Observing School 2025</div>
+            <div class="school-where">
+              <span class="lang-en">ESO Chile · La Silla Observatory</span>
+              <span class="lang-es">ESO Chile · Observatorio La Silla</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ══════════════════════════════════ -->
+<section id="contact" class="section section-alt">
+  <div class="container contact-container">
+    <h2 class="section-title">
+      <span class="lang-en">Contact</span>
+      <span class="lang-es">Contacto</span>
+    </h2>
+    <p class="contact-intro animate-in lang-en">
+      I'm happy to discuss research collaborations, outreach opportunities, or questions about my work.
+    </p>
+    <p class="contact-intro animate-in lang-es">
+      Estoy disponible para discutir colaboraciones científicas, actividades de divulgación o consultas sobre mi trabajo.
+    </p>
+
+    <div class="contact-cards animate-in">
+      <a href="mailto:ahacker@unsam.edu.ar" class="contact-card">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cc-label">
+            <span class="lang-en">Email</span>
+            <span class="lang-es">Correo</span>
+          </div>
+          <div class="cc-value">ahacker@unsam.edu.ar</div>
+        </div>
+      </a>
+
+      <a href="https://orcid.org/0009-0009-9452-0181" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26">
+            <path fill="#A6CE39" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947-.947-.431-.947-.947.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cc-label">ORCID</div>
+          <div class="cc-value">0009-0009-9452-0181</div>
+        </div>
+      </a>
+
+      <a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Hacker,+A"
+         target="_blank" rel="noopener noreferrer" class="contact-card">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cc-label">arXiv</div>
+          <div class="cc-value lang-en">Author page</div>
+          <div class="cc-value lang-es">Página de autor</div>
+        </div>
+      </a>
+    </div>
+
+    <p class="contact-location animate-in">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:middle;margin-right:5px">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+      Buenos Aires, Argentina
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ══════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <p class="lang-en">© 2026 Alejandro Hacker &ensp;·&ensp; Built with HTML, CSS &amp; JS</p>
+    <p class="lang-es">© 2026 Alejandro Hacker &ensp;·&ensp; Construido con HTML, CSS y JS</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
